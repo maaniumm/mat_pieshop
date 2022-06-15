@@ -1,0 +1,7 @@
+﻿@model PieListViewModel
+
+<h1>@Model.CurrentCategory</h1>
+@foreach (var pie in Model.Pies) // To enumerate through all pies in Pie repository
+{
+    <partial name="_PieCard" model="pie" />
+}
